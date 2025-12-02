@@ -19,8 +19,10 @@ bcrypt
 # Installation Instructions
 Run the following command to install required packages:
 ### IMPORTANT  
-bcrypt must be installed for program to run
-pip install bcrypt  
+bcrypt must be installed for program to run  
+```
+pip install bcrypt
+```
 The program uses only:  
 Python Standard Library  
 bcrypt (for hashing)  
