@@ -1,4 +1,5 @@
 # Tests for the acceess control mechanism RBAC
+
 from main import roles_permissions, enrol_user, get_user, remove_user
 
 def is_allowed(username: str, operation: int):
