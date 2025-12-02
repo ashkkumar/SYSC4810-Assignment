@@ -38,6 +38,5 @@ def test_passwords():
     print("Correct password verification PASSED")
 
 
-
 if __name__ == "__main__":
     test_passwords()

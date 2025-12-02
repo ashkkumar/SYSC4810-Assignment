@@ -39,7 +39,6 @@ def test_login():
     remove_user(test_user1)
     remove_user(test_user2)
     remove_user(test_user3)
-    print("Cleanup of test users PASSED")
 
 if __name__ == "__main__":
     test_login()
