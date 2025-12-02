@@ -215,6 +215,7 @@ def authenticate(username: str, password: str):
 
 
 def check_access(username: str, permission: int):
+    """Checks the permissions of a specific user"""
     user = get_user(username)
     print(f"Your authorized operations are: {roles_permissions[user['role']]}")
 
@@ -262,6 +263,14 @@ def main():
 
         elif request == "SIGN UP":
             username = input("Enter username: ")
+            print("""Passwords must be between 8 and 12 characters in length.
+                    • Passwords must include at least:
+                    – one upper-case letter
+                    – one lower-case letter
+                    – one numerical digit
+                    – one special character from the following: !, @, #, $, %, *, &
+                    • Passwords found on a list of common weak passwords must be prohibited. 
+                    • Passwords matching the username must be prohibited.""")
             password = input("Enter password: ")
             role = input("Enter a role: Client, Premium Client, Teller, Financial Advisor, Financial Planner: ")
 
